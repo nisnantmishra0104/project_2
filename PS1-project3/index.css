@@ -1,0 +1,523 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: Styling of list items*/
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+    width: auto;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 2px;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Styling of Home page */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    padding: 5px 200px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bree Serif',serif;
+}
+
+#home::before{
+    content: "";
+    background: url('bg3.jpeg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.h-primary{
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+
+}
+
+#home p{
+    color: rgb(5, 22, 71);
+    padding: 10px;
+}
+
+.greet{
+    font-size: 50px;
+    padding: 20px 10px;
+}
+
+.btn{
+    padding: 8px 15px;
+    border: solid black;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+} 
+
+/* Styling of Grocery Page */
+
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+
+#notebook::before{
+    content: "";
+    background: url('bg3.jpeg');
+    position: absolute;
+    height: 90vh;
+    width:100%;
+    background-size: cover;
+    background-position: top 25%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#notebook{
+    background: url('bg3.jpeg');
+    width : 100vh;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#notebook .box{ 
+    border: 2px solid brown;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px 120px;
+    border-radius: 25px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#notebook .box img{ 
+    height: 100px;
+    display: flex;
+    padding: 5px;
+ }
+
+ #notebook .box .rating i{
+    padding: 10px 1px;
+    margin: 2px 1px;
+    color: rgb(243,181,25);
+ }
+
+ #notebook .box i{
+    padding-top: 10px;
+ }
+ #notebook .box li{
+    padding: 10px;
+    margin: 5px;
+ }
+
+ #notebook .company1{
+    display: flex;
+    justify-content: space-around;
+
+ }
+
+ #notebook .company2{
+    display: flex;
+    justify-content: space-around;
+
+ }
+
+ #notebook .company3{
+    display: flex;
+    justify-content: space-around;
+
+ }
+
+ .notebooklist{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+ }
+
+ #diary .rating i{
+    font-size: 12px;
+    color: rgb(243,181,25);
+ }
+
+
+ .header{
+    background-color: rgb(136, 136, 198);
+ }
+
+ #pens::before{
+    content: "";
+    background: url('bg3.jpeg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#pens{
+    margin: 34px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#pens .box{ 
+    border: 2px solid brown;
+    justify-content: center;
+    padding: 20px;
+    margin: 2px 120px;
+    border-radius: 25px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#pens .box img{ 
+    height: 160px;
+    margin: auto;
+    display: block;
+ }
+
+ #tapes::before{
+    content: "";
+    background: url('bg3.jpeg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#tapes{
+    margin: 34px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#tapes .box{ 
+    border: 2px solid brown;
+    justify-content: center;
+    padding: 20px;
+    margin: 2px 120px;
+    border-radius: 25px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#tapes .box img{ 
+    height: 160px;
+    margin: auto;
+    display: block;
+ }
+
+ #instruments::before{
+    content: "";
+    background: url('bg3.jpeg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#instruments{
+    margin: 34px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#instruments .box{ 
+    border: 2px solid brown;
+    justify-content: center;
+    padding: 20px;
+    margin: 2px 120px;
+    border-radius: 25px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#instruments .box img{ 
+    height: 160px;
+    margin: auto;
+    display: block;
+ }
+
+ .instruments, .tapes, .pens{
+    padding: 10px;
+    margin: 5px;
+ }
+
+
+ .loginpage::before{
+    content: "";
+    background: url('bg3.jpeg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+ .loginpage{
+    border: 2px solid brown;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px 450px;
+    border-radius: 25px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+ }
+
+ .input{
+    padding: 20px;
+    margin: 2px 120px;
+ }
+
+ #signin{
+    padding: 8px 15px;
+    border: solid black;
+    margin: 10px 200px;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+
+ .box{
+    justify-content: center;
+ }
+
+ #signup{
+    justify-content: center;
+    padding-left: 150px;
+ }
+
+ #password #userid{
+    width: 100%;
+    padding: auto;
+ }
+
+ .list{
+    height: 400px;
+    padding-left: 1000px;
+    margin-left: 500px;
+ }
+
+.cart1{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+ #search-box{
+    display: flex;
+    color: #e8f6ea;
+    margin-left: 250px;
+ }
+
+ .cart{
+    width: 40px;
+    height: 30px;
+    line-height: 40px;
+    background-color: #e8f6ea;
+    color: #088178;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+ }
+
+ .fa-solid fa-cart-arrow-down{
+    height: 50%;
+ }
+
+ .counter{
+    display: flex;
+ }
+ 
+ .counter button{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(50, 50, 109);
+ }
+ .counter h{
+    margin: 10px 30px;
+    padding: 20px;
+    height: 20px;
+ }
+
+ #root{
+    margin: 0px 10px;
+    padding: 5px;
+ }
+
+ #dashboard{
+    display: flex;
+    flex-direction: row;
+
+ }
+ #dashboard .sidebar{
+    width:20%;
+    height: 100vh;
+    background-color: cornflowerblue;
+ }
+
+ #dashboard .dashboard-content{
+     width:80%;
+    height: 100vh;
+ }
+
+ .sidebar h3{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+ }
+
+ .user{
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+ }
+ .user img{
+    display: inline-block;
+    border-radius: 50%;
+    width: 60px;
+    margin-right: 5px;
+    border: 2px saddlebrown;
+ }
+
+ .user span{
+     top:20%;
+     font-size: 20px;
+     color: #fff;
+     display: flex;
+     justify-content: center;
+ }
+
+ .menu{
+    margin: 5px;
+    padding: 5px;
+ }
+
+ .menu ul{
+    list-style: none;
+ }
+
+ .menu li{
+    padding: 15px 10px;
+    font-size: 20px;
+ }
+
+ .menu li a{
+    height: 100%;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+ }
+
+ .menu li:hover{
+    background-color: #e8f6ea;
+    color: #000;
+ }
+
+ .fa-dashboard{
+    color: rgb(3, 3, 105);
+ }
+
+ .dashnav {
+    background-color: #088178;
+    padding: 20px 20px;
+    height: 30px;
+ }
+
+ .dashnav a{
+    color: rgb(38, 2, 62);
+ }
+
+ .fa-power-off{
+    float: right;
+ }
